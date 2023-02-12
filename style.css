@@ -1,0 +1,34 @@
+body{
+    font-family: Arial;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+#left-column {
+    flex:60%;
+}
+
+#right-column {
+    flex:40%;
+}
+
+#frame {
+    width: 100%;
+    height: 800px;
+}
+
+circle:hover {
+  fill: red;
+}
+
+.border{
+    stroke: aquamarine;
+    stroke-width: 4px;
+}

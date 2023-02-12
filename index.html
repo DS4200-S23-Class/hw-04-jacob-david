@@ -2,13 +2,90 @@
 <html> 
 
 <head>
+
+    <!--    style-->
+    <link rel="stylesheet" href="style.css">
+    <title>hw-04</title>
     <meta charset=utf-8/>
 </head>
 
 
 <body>
+    <div>
+        <h1 class="center">
+        hw-04: Event Handling
+        </h1>
 
+        <div class="flex">
+            <div id="left-column">
+                <svg id="frame">
+                    <line x1=0% y1=0% x2=0% y2=100% stroke="black" stroke-width="5px"/>
+                    <line x1=100% y1=100% x2=0% y2=100% stroke="black" stroke-width="5px" />
 
+                    <circle id="(1,2)" cx=10% cy=80% r="10" />
+                    <circle id="(2,4)" cx=20% cy=60% r="10" />
+                    <circle id="(6,2)" cx=60% cy=80% r="10" />
+                    <circle id="(9,9)" cx=90% cy=10% r="10" />
+
+                </svg>
+            </div>
+            <div id="right-column">
+                <p id="selected-point">
+                    Most Recent Point: NaN
+                </p>
+                <div>
+                    <form id="pointForm">
+                        <label for="x-val">X value</label>
+                        <input type="number" id="x-val" min="1" max="10" value="5">
+                        <br>
+                        <label for="y-val">Y value</label>
+                        <input type="number" id="y-val" min="1" max="10" value="5">
+                        <br>
+
+                    </form>
+                    <button type="submit" id="subButton">
+                        Submit
+                    </button>
+
+                </div>
+                <div>
+                    <form>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <h2 class="center">Acknowledgements</h2>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">
+                    Adding a Child graphic to our SVG frame
+                </a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+                    ">
+                    Extracting Values of an input field
+                </a>
+            </li>
+            <li>
+                <a href="https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb">
+                    Passing Args to Event Listeners
+                </a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/22894540/creating-circles-with-svg-and-javascript">
+                    Appending svg children to an svg element
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
